@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess The Number</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <h1>Guess The Number</h1>
+    <div class="game-container">
+      <div class="form-container box">
+        <h2>Take a Guess</h2>
+        <label for="number"
+          >Enter a number <br />
+          between 1 and 10</label
+        >
+        <input type="tel" id="number" disabled autocomplete="off" />
+        <button id="go" disabled>GO</button>
+      </div>
+      <div class="guess-count-container box">
+        <h2>Guess Left</h2>
+        <h1 class="guess-left">3</h1>
+      </div>
+      <div class="stats-container box">
+        <h2>Game Stats</h2>
+        <ul id="guess-list">
+          <li>Guess 1: -------</li>
+          <li>Guess 2: -------</li>
+          <li>Guess 3: -------</li>
+        </ul>
+        <h2>Message:</h2>
+        <p class="game-stats-text">Hit start to run the game.</p>
+      </div>
+    </div>
+    <button class="restart">Start</button>
+  </body>
+</html>
